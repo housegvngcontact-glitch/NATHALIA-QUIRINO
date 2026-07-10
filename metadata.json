@@ -1,0 +1,6 @@
+{
+  "name": "Nathalia Quirino - Nutricionista",
+  "description": "Site profissional de Nathalia Quirino, Nutricionista Clínica e de Performance. Localizada no Rio de Janeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
