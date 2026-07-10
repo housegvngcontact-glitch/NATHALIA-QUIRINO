@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+// Assets moved to public folder for Vercel deployment support
 import { 
   Award, 
   Zap, 
