@@ -1,4 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
+import performanceImg from './assets/img/performance.jpg';
+import bgVideo from './assets/video/bg-video.mp4';
+
 import { motion, AnimatePresence } from 'motion/react';
 // Assets moved to public folder for Vercel deployment support
 import { 
@@ -266,7 +269,7 @@ export default function App() {
                   src={localPhotosData[0].originalPath} 
                   alt="Nathalia Quirino" 
                   className="w-full h-full object-cover object-[center_20%] md:object-top"
-                  referrerPolicy="no-referrer"
+                  
                   fetchPriority="high"
                   decoding="async"
                 />
@@ -526,13 +529,13 @@ export default function App() {
               <div className="border border-white/10 p-3 bg-white/[0.02] rounded-sm relative">
                 <div className="aspect-[16/9] rounded-sm overflow-hidden bg-neutral-950 relative shadow-2xl">
                   <video 
-                    src="/bg-video.mp4?v=2" 
+                    src={bgVideo} 
                     className="w-full h-full object-cover"
                     controls
                     loop
                     muted
                     playsInline
-                    poster="/performance.jpg?v=2"
+                    poster={performanceImg}
                   />
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
                     Vídeo Exclusivo
@@ -690,7 +693,7 @@ export default function App() {
                          src={item.image} 
                          alt={item.name} 
                          className="w-full h-full object-cover" 
-                         referrerPolicy="no-referrer" 
+                          
                          loading="lazy"
                          decoding="async"
                        />
@@ -768,7 +771,7 @@ export default function App() {
                   src={localPhotosData[3].placeholderUrl} 
                   alt="Clínica" 
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
+                  
                   loading="lazy"
                   decoding="async"
                 />
@@ -804,7 +807,7 @@ export default function App() {
                   src={localPhotosData[2].placeholderUrl} 
                   alt="Performance" 
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
+                  
                   loading="lazy"
                   decoding="async"
                 />

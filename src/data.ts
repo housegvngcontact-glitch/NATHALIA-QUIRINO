@@ -73,38 +73,42 @@ export const servicesData: Service[] = [
 
 export const resultsData: Result[] = []; // Removido conforme solicitação de retirar fotos não fornecidas
 
+import heroImg from './assets/img/hero.jpg';
+import sobreImg from './assets/img/sobre.jpg';
+import performanceImg from './assets/img/performance.jpg';
+
 export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
     name: 'Nathalia Clínica',
-    originalPath: '/hero.jpg?v=2',
+    originalPath: heroImg,
     description: 'Nathalia no consultório, transmitindo autoridade, sofisticação e acolhimento.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
-    placeholderUrl: '/hero.jpg?v=2'
+    placeholderUrl: heroImg
   },
   {
     id: 'sobre-pic',
     name: 'Consultório / Clínica',
-    originalPath: '/hero.jpg?v=2',
+    originalPath: heroImg,
     description: 'Nathalia no consultório em seu ambiente de atendimento.',
     fallbackText: 'Autoridade Clínica',
-    placeholderUrl: '/hero.jpg?v=2'
+    placeholderUrl: heroImg
   },
   {
     id: 'judo-pic',
     name: 'Performance / Judô',
-    originalPath: '/sobre.jpg?v=2',
+    originalPath: sobreImg,
     description: 'Nathalia praticando judô com kimono, demonstrando foco e disciplina de atleta.',
     fallbackText: 'Lutadora de Judô',
-    placeholderUrl: '/sobre.jpg?v=2'
+    placeholderUrl: sobreImg
   },
   {
     id: 'fitness-pic',
     name: 'Atleta / Fisiculturismo',
-    originalPath: '/performance.jpg?v=2',
+    originalPath: performanceImg,
     description: 'Nathalia em pose de fisiculturismo ou treinando na academia.',
     fallbackText: 'Atleta de Fisiculturismo',
-    placeholderUrl: '/performance.jpg?v=2'
+    placeholderUrl: performanceImg
   }
 ];
 
