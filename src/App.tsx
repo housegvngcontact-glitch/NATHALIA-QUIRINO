@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 
 import { motion, AnimatePresence } from 'motion/react';
-import { SafeImage } from './components/SafeImage';
 // Assets moved to public folder for Vercel deployment support
 import { 
   Award, 
@@ -264,7 +263,7 @@ export default function App() {
             >
               {/* Massive Background Image */}
               <div className="absolute inset-0 z-0">
-                <SafeImage src={localPhotosData[0].originalPath} alt="Nathalia Quirino" className="w-full h-full object-cover object-[center_20%] md:object-top" fetchPriority="high" decoding="async" />
+                <img src={localPhotosData[0].originalPath} alt="Nathalia Quirino" className="w-full h-full object-cover object-[center_20%] md:object-top" fetchPriority="high" decoding="async" />
                 {/* Gradient Overlays for readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#16171B]/95 via-[#16171B]/80 md:via-[#16171B]/60 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#16171B] via-[#16171B]/40 to-transparent"></div>
@@ -521,13 +520,13 @@ export default function App() {
               <div className="border border-white/10 p-3 bg-white/[0.02] rounded-sm relative">
                 <div className="aspect-[16/9] rounded-sm overflow-hidden bg-neutral-950 relative shadow-2xl">
                   <video 
-                    src="video/bg-video.mp4" 
+                    src="/video/bg-video.mp4" 
                     className="w-full h-full object-cover"
                     controls
                     loop
                     muted
                     playsInline
-                    poster="imagem/performance.jpg"
+                    poster="/imagem/performance.jpg"
                   />
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
                     Vídeo Exclusivo
@@ -657,6 +656,7 @@ export default function App() {
                   tag: "Transformação",
                   image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/565027825_18074760917154184_4232637953774717387_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=108&ig_cache_key=Mzc0NDgwNjgxNzIxNTEyMjA0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjExNzAuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=gvmWlb0MMWgQ7kNvwEAZBap&_nc_oc=AdrH502KGzGFl3Y8Ly-1FBEHxGfur0FcQG2i6UUo6cCpLRGfIYw-njG5izpG6Q2WdCOymgUhtB7fqTlIrUWnxXmO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQDEP94ev2y-qxgtF_wCn165LJBIuyBXfdj9YrklDQ9iwA&oe=6A57060B"
                 }
+
               ].map((item, idx) => (
                 <motion.div 
                   key={idx}
@@ -679,7 +679,7 @@ export default function App() {
                     </div>
                     
                     <div className="w-full aspect-[4/5] rounded-sm overflow-hidden border border-white/10 relative">
-                       <SafeImage src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" decoding="async" />
+                       <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" decoding="async" />
                        <div className="absolute inset-0 bg-gradient-to-t from-[#212328] via-transparent to-transparent opacity-60"></div>
                     </div>
 
@@ -750,7 +750,7 @@ export default function App() {
               className="relative rounded-2xl overflow-hidden group min-h-[500px] flex flex-col justify-end"
             >
               <div className="absolute inset-0 z-0">
-                <SafeImage src={localPhotosData[3].placeholderUrl} alt="Clínica" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                <img src={localPhotosData[3].placeholderUrl} alt="Clínica" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               </div>
 
@@ -779,7 +779,7 @@ export default function App() {
               className="relative rounded-2xl overflow-hidden group min-h-[500px] flex flex-col justify-end"
             >
               <div className="absolute inset-0 z-0">
-                <SafeImage src={localPhotosData[2].placeholderUrl} alt="Performance" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                <img src={localPhotosData[2].placeholderUrl} alt="Performance" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               </div>
 
