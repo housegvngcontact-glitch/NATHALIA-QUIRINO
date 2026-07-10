@@ -520,13 +520,13 @@ export default function App() {
               <div className="border border-white/10 p-3 bg-white/[0.02] rounded-sm relative">
                 <div className="aspect-[16/9] rounded-sm overflow-hidden bg-neutral-950 relative shadow-2xl">
                   <video 
-                    src="video/bg-video.mp4" 
+                    src="/video/bg-video.mp4" 
                     className="w-full h-full object-cover"
                     controls
                     loop
                     muted
                     playsInline
-                    poster="imagem/performance.jpg"
+                    poster="/imagem/performance.jpg"
                   />
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
                     Vídeo Exclusivo
@@ -599,7 +599,7 @@ export default function App() {
                   text: "Uma mudança incrível de composição corporal, priorizando a perda de gordura e manutenção da massa magra com comida de verdade.",
                   stars: 5,
                   tag: "Emagrecimento",
-                  image: "imagem/feedback/1.jpg"
+                  image: "/imagem/feedback/1.jpg"
                 },
                 {
                   name: "Paciente 2",
@@ -610,7 +610,7 @@ export default function App() {
                   text: "Protocolo nutricional focado em densidade muscular e definição, aliado à performance nos treinos intensos diários.",
                   stars: 5,
                   tag: "Hipertrofia",
-                  image: "imagem/feedback/2.jpg"
+                  image: "/imagem/feedback/2.jpg"
                 },
                 {
                   name: "Paciente 3",
@@ -621,7 +621,7 @@ export default function App() {
                   text: "Além da visível melhora estética, exames clínicos perfeitos e muita energia para o dia a dia. Nutrição com base científica.",
                   stars: 5,
                   tag: "Performance",
-                  image: "imagem/feedback/3.jpg"
+                  image: "/imagem/feedback/3.jpg"
                 },
                 {
                   name: "Paciente 4",
@@ -632,7 +632,7 @@ export default function App() {
                   text: "Reestruturação completa da alimentação para garantir saciedade, performance metabólica e uma definição impressionante.",
                   stars: 5,
                   tag: "Saúde Integrativa",
-                  image: "imagem/feedback/4.jpg"
+                  image: "/imagem/feedback/4.jpg"
                 },
                 {
                   name: "Paciente 5",
@@ -643,7 +643,7 @@ export default function App() {
                   text: "Alcançando o equilíbrio perfeito entre o corpo dos sonhos e exames excelentes. Nutrição que respeita a individualidade.",
                   stars: 5,
                   tag: "Resultados",
-                  image: "imagem/feedback/5.jpg"
+                  image: "/imagem/feedback/5.jpg"
                 },
                 {
                   name: "Paciente 6",
@@ -654,16 +654,15 @@ export default function App() {
                   text: "Transformação que vai muito além do espelho. Protocolo focado em restabelecer a saúde e otimizar a máquina humana.",
                   stars: 5,
                   tag: "Transformação",
-                  image: "imagem/feedback/6.jpg"
+                  image: "/imagem/feedback/6.jpg"
                 }
-
               ].map((item, idx) => (
                 <motion.div 
                   key={idx}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.6, delay: idx * 0.15, type: 'spring', stiffness: 80 }}
+                  initial={{ opacity: 1, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-20px" }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="min-w-[280px] sm:min-w-[320px] bg-[#212328]/60 backdrop-blur-md border border-white/10 p-5 rounded-sm flex flex-col justify-between space-y-4 snap-start hover:border-[#C81D31]/40 hover:bg-[#C81D31]/5 transition-all duration-300 text-white cursor-pointer group"
                 >
                   <div className="space-y-4">
@@ -679,7 +678,14 @@ export default function App() {
                     </div>
                     
                     <div className="w-full aspect-[4/5] rounded-sm overflow-hidden border border-white/10 relative">
-                       <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" decoding="async" />
+                       <img 
+                         src={item.image} 
+                         alt={item.name} 
+                         referrerPolicy="no-referrer"
+                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                         loading="lazy" 
+                         decoding="async" 
+                       />
                        <div className="absolute inset-0 bg-gradient-to-t from-[#212328] via-transparent to-transparent opacity-60"></div>
                     </div>
 
