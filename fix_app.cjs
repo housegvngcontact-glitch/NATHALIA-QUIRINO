@@ -1,16 +1,20 @@
 const fs = require('fs');
 let app = fs.readFileSync('src/App.tsx', 'utf8');
 
-// We need to add the imports to App.tsx
-const imports = `import performanceImg from './assets/img/performance.jpg';
-import bgVideo from './assets/video/bg-video.mp4';
-`;
+// Insert SafeImage import
+app = app.replace("import { motion, AnimatePresence } from 'motion/react';", "import { motion, AnimatePresence } from 'motion/react';\nimport { SafeImage } from './components/SafeImage';");
 
-app = app.replace("import { useState, useRef, useEffect } from 'react';", "import { useState, useRef, useEffect } from 'react';\n" + imports);
+// Replace <img ... /> with <SafeImage ... />
+app = app.replace(/<img\s*\n\s*src=\{localPhotosData\[0\]\.originalPath\}\s*\n\s*alt="Nathalia Quirino"\s*\n\s*className="w-full h-full object-cover object-\[center_20%\] md:object-top"\s*\n\s*\n\s*fetchPriority="high"\s*\n\s*decoding="async"\s*\n\s*\/>/g, 
+  '<SafeImage src={localPhotosData[0].originalPath} alt="Nathalia Quirino" className="w-full h-full object-cover object-[center_20%] md:object-top" fetchPriority="high" decoding="async" />');
 
-// We replace the literal string with the variable inside curly braces for React
-app = app.replace(/src="\/bg-video\.mp4\?v=2"/g, 'src={bgVideo}');
-app = app.replace(/poster="\/performance\.jpg\?v=2"/g, 'poster={performanceImg}');
+app = app.replace(/<img\s*\n\s*src=\{localPhotosData\[3\]\.placeholderUrl\}\s*\n\s*alt="Clínica"\s*\n\s*className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"\s*\n\s*\n\s*loading="lazy"\s*\n\s*decoding="async"\s*\n\s*\/>/g, 
+  '<SafeImage src={localPhotosData[3].placeholderUrl} alt="Clínica" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />');
 
-// Also replace the social proof no-referrer (we removed it before, but let's make sure it's correct)
+app = app.replace(/<img\s*\n\s*src=\{localPhotosData\[2\]\.placeholderUrl\}\s*\n\s*alt="Performance"\s*\n\s*className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"\s*\n\s*\n\s*loading="lazy"\s*\n\s*decoding="async"\s*\n\s*\/>/g, 
+  '<SafeImage src={localPhotosData[2].placeholderUrl} alt="Performance" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />');
+
+app = app.replace(/<motion\.img\s*\n\s*whileHover=\{\{ scale: 1\.05 \}\}\s*\n\s*transition=\{\{ duration: 0\.4 \}\}\s*\n\s*src=\{item\.image\}\s*\n\s*alt=\{item\.name\}\s*\n\s*className="w-full h-full object-cover"\s*\n\s*\n\s*loading="lazy"\s*\n\s*decoding="async"\s*\n\s*\/>/g, 
+  '<SafeImage src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" decoding="async" />');
+
 fs.writeFileSync('src/App.tsx', app);
