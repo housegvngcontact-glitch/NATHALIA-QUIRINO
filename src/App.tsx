@@ -526,13 +526,13 @@ export default function App() {
               <div className="border border-white/10 p-3 bg-white/[0.02] rounded-sm relative">
                 <div className="aspect-[16/9] rounded-sm overflow-hidden bg-neutral-950 relative shadow-2xl">
                   <video 
-                    src="/SaveInta.com_AQOsXjzEUa5ohlB2cACYe6sifmzxbxqoDRTIpvEafjy8SAEUbrzBSPVH4n51j1eIjmOXkzxHlXxhYiJz_g5905Miod5Bid9xq5KszdM.mp4" 
+                    src="/bg-video.mp4" 
                     className="w-full h-full object-cover"
                     controls
                     loop
                     muted
                     playsInline
-                    poster="/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg"
+                    poster="/performance.jpg"
                   />
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
                     Vídeo Exclusivo

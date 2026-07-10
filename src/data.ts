@@ -77,34 +77,34 @@ export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
     name: 'Nathalia Clínica',
-    originalPath: '/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg',
+    originalPath: '/hero.jpg',
     description: 'Nathalia no consultório, transmitindo autoridade, sofisticação e acolhimento.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
-    placeholderUrl: '/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg'
+    placeholderUrl: '/hero.jpg'
   },
   {
     id: 'sobre-pic',
     name: 'Consultório / Clínica',
-    originalPath: '/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg',
+    originalPath: '/hero.jpg',
     description: 'Nathalia no consultório em seu ambiente de atendimento.',
     fallbackText: 'Autoridade Clínica',
-    placeholderUrl: '/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg'
+    placeholderUrl: '/hero.jpg'
   },
   {
     id: 'judo-pic',
     name: 'Performance / Judô',
-    originalPath: '/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg',
+    originalPath: '/sobre.jpg',
     description: 'Nathalia praticando judô com kimono, demonstrando foco e disciplina de atleta.',
     fallbackText: 'Lutadora de Judô',
-    placeholderUrl: '/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg'
+    placeholderUrl: '/sobre.jpg'
   },
   {
     id: 'fitness-pic',
     name: 'Atleta / Fisiculturismo',
-    originalPath: '/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg',
+    originalPath: '/performance.jpg',
     description: 'Nathalia em pose de fisiculturismo ou treinando na academia.',
     fallbackText: 'Atleta de Fisiculturismo',
-    placeholderUrl: '/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg'
+    placeholderUrl: '/performance.jpg'
   }
 ];
 
