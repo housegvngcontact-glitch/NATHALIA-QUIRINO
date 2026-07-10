@@ -77,34 +77,34 @@ export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
     name: 'Nathalia Clínica',
-    originalPath: '/hero.jpg',
+    originalPath: '/hero.jpg?v=2',
     description: 'Nathalia no consultório, transmitindo autoridade, sofisticação e acolhimento.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
-    placeholderUrl: '/hero.jpg'
+    placeholderUrl: '/hero.jpg?v=2'
   },
   {
     id: 'sobre-pic',
     name: 'Consultório / Clínica',
-    originalPath: '/hero.jpg',
+    originalPath: '/hero.jpg?v=2',
     description: 'Nathalia no consultório em seu ambiente de atendimento.',
     fallbackText: 'Autoridade Clínica',
-    placeholderUrl: '/hero.jpg'
+    placeholderUrl: '/hero.jpg?v=2'
   },
   {
     id: 'judo-pic',
     name: 'Performance / Judô',
-    originalPath: '/sobre.jpg',
+    originalPath: '/sobre.jpg?v=2',
     description: 'Nathalia praticando judô com kimono, demonstrando foco e disciplina de atleta.',
     fallbackText: 'Lutadora de Judô',
-    placeholderUrl: '/sobre.jpg'
+    placeholderUrl: '/sobre.jpg?v=2'
   },
   {
     id: 'fitness-pic',
     name: 'Atleta / Fisiculturismo',
-    originalPath: '/performance.jpg',
+    originalPath: '/performance.jpg?v=2',
     description: 'Nathalia em pose de fisiculturismo ou treinando na academia.',
     fallbackText: 'Atleta de Fisiculturismo',
-    placeholderUrl: '/performance.jpg'
+    placeholderUrl: '/performance.jpg?v=2'
   }
 ];
 

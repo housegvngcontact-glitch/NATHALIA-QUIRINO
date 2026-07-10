@@ -526,13 +526,13 @@ export default function App() {
               <div className="border border-white/10 p-3 bg-white/[0.02] rounded-sm relative">
                 <div className="aspect-[16/9] rounded-sm overflow-hidden bg-neutral-950 relative shadow-2xl">
                   <video 
-                    src="/bg-video.mp4" 
+                    src="/bg-video.mp4?v=2" 
                     className="w-full h-full object-cover"
                     controls
                     loop
                     muted
                     playsInline
-                    poster="/performance.jpg"
+                    poster="/performance.jpg?v=2"
                   />
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
                     Vídeo Exclusivo
