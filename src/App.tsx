@@ -42,7 +42,7 @@ import {
   localPhotosData,
   localSeoData
 } from './data';
-import bgVideo from './assets/bg-video.mp4';
+import bgVideo from './assets/SaveInta.com_AQOsXjzEUa5ohlB2cACYe6sifmzxbxqoDRTIpvEafjy8SAEUbrzBSPVH4n51j1eIjmOXkzxHlXxhYiJz_g5905Miod5Bid9xq5KszdM.mp4';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
