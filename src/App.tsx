@@ -43,9 +43,6 @@ import {
   localSeoData
 } from './data';
 
-import heroImg from '../Videos e imagens/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg';
-import sobreImg from '../Videos e imagens/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg';
-import performanceImg from '../Videos e imagens/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg';
 import bgVideo from '../Videos e imagens/SaveInta.com_AQOsXjzEUa5ohlB2cACYe6sifmzxbxqoDRTIpvEafjy8SAEUbrzBSPVH4n51j1eIjmOXkzxHlXxhYiJz_g5905Miod5Bid9xq5KszdM.mp4';
 
 export default function App() {
@@ -268,7 +265,7 @@ export default function App() {
             >
               {/* Massive Background Image */}
               <div className="absolute inset-0 z-0">
-                <img src={localPhotosData[0].originalPath} alt="Nathalia Quirino" className="w-full h-full object-cover object-[center_20%] md:object-top" fetchPriority="high" decoding="async" />
+                <img src={localPhotosData[0].originalPath} alt="Nathalia Quirino" className="w-full h-full object-cover object-[center_25%] md:object-[center_35%]" fetchPriority="high" decoding="async" />
                 {/* Gradient Overlays for readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#16171B]/95 via-[#16171B]/80 md:via-[#16171B]/60 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#16171B] via-[#16171B]/40 to-transparent"></div>
@@ -607,7 +604,7 @@ export default function App() {
                   text: "Uma mudança incrível de composição corporal, priorizando a perda de gordura e manutenção da massa magra com comida de verdade.",
                   stars: 5,
                   tag: "Emagrecimento",
-                  image: heroImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/549485541_18078939464495070_7167340875126025666_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=103&ig_cache_key=MjQ1Mzk1NDI3NzkyMDg0ODYzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjEyNDIuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=P2SsR3vuBEsQ7kNvwEyD-oq&_nc_oc=Adq5i0maU0hXkyj1pcpwc_JkWGF9N10GFtCVVgTRXSVJJSRiFpQB2ZUwZZHS_XM3UdA7PcbjjPEGEY43DgDygZSl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQC4iQa55gQYoNQBMqdEadItKhHDJRh5N4Pd8I3OplVDQg&oe=6A572EE2"
                 },
                 {
                   name: "Paciente 2",
@@ -618,7 +615,7 @@ export default function App() {
                   text: "Protocolo nutricional focado em densidade muscular e definição, aliado à performance nos treinos intensos diários.",
                   stars: 5,
                   tag: "Hipertrofia",
-                  image: sobreImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/551172492_18079124678304820_1370414004233368566_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=107&ig_cache_key=MjUzMTQ5NTQ4MTIwOTk5Njc3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjEyNDIuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=a4tURwF1gkUQ7kNvwH1m85f&_nc_oc=AdolnJypjRC7_y7qpEq-3qBavluUMeALA0FW8XMYquMjwPXcx4S2rLX02b3p1fovPjmdee5PB2bA28pp48FNu0XI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQCTzGmz33SXpLQTwnVK1FZNwE721STXMkQ-A78-cR78Ag&oe=6A570CA7"
                 },
                 {
                   name: "Paciente 3",
@@ -629,7 +626,7 @@ export default function App() {
                   text: "Além da visível melhora estética, exames clínicos perfeitos e muita energia para o dia a dia. Nutrição com base científica.",
                   stars: 5,
                   tag: "Performance",
-                  image: performanceImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/571155811_18108779191595728_3307279836678289190_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=104&ig_cache_key=MjY3NzkwMjc0NTcxMDA1MjA5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjEyNDIuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=T-qNFex53yYQ7kNvwGs8asw&_nc_oc=AdoHzxZw_vTYipr7_O6X239PPGsmcRvHS-cRC8Ew87tQwpiLcobEfJc-X9iHox97m4wHFKBMuG9oTZfauNBp4gKl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQDCl5hOtzuF-JtnZUKuN3WTXiT50drCCPX_ghssBslxVw&oe=6A571930"
                 },
                 {
                   name: "Paciente 4",
@@ -640,7 +637,7 @@ export default function App() {
                   text: "Reestruturação completa da alimentação para garantir saciedade, performance metabólica e uma definição impressionante.",
                   stars: 5,
                   tag: "Saúde Integrativa",
-                  image: heroImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/581132946_18289893283278038_600493320419025168_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=102&ig_cache_key=Mjk4MzgzODcyNzAwNjA1NTM4NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjEyNDIuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=fu9hd8_rfwEQ7kNvwGXHbG7&_nc_oc=Adq-tcI7_7t8yje0sEJws4s2L6zzy4MO_I97-Ec-EZRTtotnikBSsicFXiZ4FALIdUvGiVWdFM4k_9i_wybemr5R&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQAZkKCVMZte0uEBcMAMa5IROmY_l9TTQ3fEWQM7DnrDwQ&oe=6A573670"
                 },
                 {
                   name: "Paciente 5",
@@ -651,7 +648,7 @@ export default function App() {
                   text: "Alcançando o equilíbrio perfeito entre o corpo dos sonhos e exames excelentes. Nutrição que respeita a individualidade.",
                   stars: 5,
                   tag: "Resultados",
-                  image: sobreImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/566877348_18093644905655603_5291044603055282924_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=110&ig_cache_key=MzA4MzE1MDUxMzU3NTc0MjExOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjEyNDIuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=TXTNflvyScoQ7kNvwE6oCga&_nc_oc=AdoxneGzssFTtjkKBoTFER7jjdWqwFbncNVkbXIHv3-YIPUx5wBny92FTZ6WJJaAvpqAb-exKstWqFs25qZ2ZAyt&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQBWU5840MChPTE8yB6AsIhYN4UPcctCfgsTEkJq6i_88Q&oe=6A57380F"
                 },
                 {
                   name: "Paciente 6",
@@ -662,7 +659,7 @@ export default function App() {
                   text: "Transformação que vai muito além do espelho. Protocolo focado em restabelecer a saúde e otimizar a máquina humana.",
                   stars: 5,
                   tag: "Transformação",
-                  image: performanceImg
+                  image: "https://instagram.fgig20-1.fna.fbcdn.net/v/t51.82787-15/565027825_18074760917154184_4232637953774717387_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=108&ig_cache_key=Mzc0NDgwNjgxNzIxNTEyMjA0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IlNUT1JZLnhwaWRzLjExNzAuc2RyLnJlZ3VsYXJfcGhvdG8uQzMifQ%3D%3D&_nc_ohc=gvmWlb0MMWgQ7kNvwEAZBap&_nc_oc=AdrH502KGzGFl3Y8Ly-1FBEHxGfur0FcQG2i6UUo6cCpLRGfIYw-njG5izpG6Q2WdCOymgUhtB7fqTlIrUWnxXmO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgig20-1.fna&_nc_gid=lhFlBrFxmg6ENN3AXyu_rg&_nc_ss=7a22e&oh=00_AQDEP94ev2y-qxgtF_wCn165LJBIuyBXfdj9YrklDQ9iwA&oe=6A57060B"
                 }
               ].map((item, idx) => (
                 <motion.div 
