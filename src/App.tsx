@@ -42,6 +42,7 @@ import {
   localPhotosData,
   localSeoData
 } from './data';
+import bgVideo from './assets/bg-video.mp4';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -528,7 +529,7 @@ export default function App() {
                     playsInline
                     poster={localPhotosData[2].originalPath}
                   >
-                    <source src="/video/bg-video.mp4" type="video/mp4" />
+                    <source src={bgVideo} type="video/mp4" />
                     Seu navegador não suporta vídeos.
                   </video>
                   <div className="absolute top-4 right-4 bg-[#121316]/80 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-sm text-white font-mono text-[9px] uppercase tracking-wider">
