@@ -1,3 +1,7 @@
+import heroImg from './assets/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg';
+import sobreImg from './assets/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg';
+import performanceImg from './assets/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg';
+
 export interface Service {
   id: string;
   title: string;
@@ -75,37 +79,37 @@ export const resultsData: Result[] = [
   {
     id: 'res-1',
     title: 'Transformação 1',
-    image: '/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg',
+    image: heroImg,
     description: 'Evolução de emagrecimento e definição.'
   },
   {
     id: 'res-2',
     title: 'Transformação 2',
-    image: '/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg',
+    image: sobreImg,
     description: 'Ganho de performance e massa muscular.'
   },
   {
     id: 'res-3',
     title: 'Transformação 3',
-    image: '/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg',
+    image: performanceImg,
     description: 'Reeducação alimentar e saúde.'
   },
   {
     id: 'res-4',
     title: 'Transformação 4',
-    image: '/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg',
+    image: heroImg,
     description: 'Foco em performance esportiva.'
   },
   {
     id: 'res-5',
     title: 'Transformação 5',
-    image: '/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg',
+    image: sobreImg,
     description: 'Acompanhamento clínico de precisão.'
   },
   {
     id: 'res-6',
     title: 'Transformação 6',
-    image: '/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg',
+    image: performanceImg,
     description: 'Resultados duradouros e sustentáveis.'
   }
 ];
@@ -115,26 +119,26 @@ export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
     name: 'Nathalia Quirino - Hero',
-    originalPath: '/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg',
+    originalPath: heroImg,
     description: 'Nathalia Quirino em um ambiente profissional, transmitindo autoridade e foco.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
-    placeholderUrl: '/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg'
+    placeholderUrl: heroImg
   },
   {
     id: 'sobre-pic',
     name: 'Nathalia - Corrida',
-    originalPath: '/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg',
+    originalPath: sobreImg,
     description: 'Nathalia Quirino praticando corrida, demonstrando a vivência prática do esporte.',
     fallbackText: 'Nathalia Correndo',
-    placeholderUrl: '/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg'
+    placeholderUrl: sobreImg
   },
   {
     id: 'performance-pic',
     name: 'Nathalia - Performance',
-    originalPath: '/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg',
+    originalPath: performanceImg,
     description: 'Nathalia Quirino em competição, demonstrando os resultados da alta performance.',
     fallbackText: 'Atleta de Performance',
-    placeholderUrl: '/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg'
+    placeholderUrl: performanceImg
   }
 ];
 
