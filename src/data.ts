@@ -77,34 +77,26 @@ export const resultsData: Result[] = []; // Removido conforme solicitação de r
 export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
-    name: 'Nathalia Clínica',
+    name: 'Nathalia Quirino - Hero',
     originalPath: '/imagem/hero.jpg',
-    description: 'Nathalia no consultório, transmitindo autoridade, sofisticação e acolhimento.',
+    description: 'Nathalia Quirino em um ambiente profissional, transmitindo autoridade e foco.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
     placeholderUrl: '/imagem/hero.jpg'
   },
   {
     id: 'sobre-pic',
-    name: 'Consultório / Clínica',
-    originalPath: '/imagem/hero.jpg',
-    description: 'Nathalia no consultório em seu ambiente de atendimento.',
-    fallbackText: 'Autoridade Clínica',
-    placeholderUrl: '/imagem/hero.jpg'
-  },
-  {
-    id: 'judo-pic',
-    name: 'Performance / Judô',
+    name: 'Nathalia - Corrida',
     originalPath: '/imagem/sobre.jpg',
-    description: 'Nathalia praticando judô com kimono, demonstrando foco e disciplina de atleta.',
-    fallbackText: 'Lutadora de Judô',
+    description: 'Nathalia Quirino praticando corrida, demonstrando a vivência prática do esporte.',
+    fallbackText: 'Nathalia Correndo',
     placeholderUrl: '/imagem/sobre.jpg'
   },
   {
-    id: 'fitness-pic',
-    name: 'Atleta / Fisiculturismo',
+    id: 'performance-pic',
+    name: 'Nathalia - Performance',
     originalPath: '/imagem/performance.jpg',
-    description: 'Nathalia em pose de fisiculturismo ou treinando na academia.',
-    fallbackText: 'Atleta de Fisiculturismo',
+    description: 'Nathalia Quirino em competição, demonstrando os resultados da alta performance.',
+    fallbackText: 'Atleta de Performance',
     placeholderUrl: '/imagem/performance.jpg'
   }
 ];

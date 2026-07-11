@@ -757,7 +757,7 @@ export default function App() {
               className="relative rounded-2xl overflow-hidden group min-h-[500px] flex flex-col justify-end"
             >
               <div className="absolute inset-0 z-0">
-                <img src={localPhotosData[3].placeholderUrl} alt="Clínica" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                <img src={localPhotosData[2].placeholderUrl} alt="Clínica" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               </div>
 
@@ -786,7 +786,7 @@ export default function App() {
               className="relative rounded-2xl overflow-hidden group min-h-[500px] flex flex-col justify-end"
             >
               <div className="absolute inset-0 z-0">
-                <img src={localPhotosData[2].placeholderUrl} alt="Performance" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
+                <img src={localPhotosData[1].placeholderUrl} alt="Performance" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               </div>
 
