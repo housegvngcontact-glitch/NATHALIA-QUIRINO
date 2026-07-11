@@ -1,3 +1,7 @@
+import heroImg from './assets/hero.jpg';
+import sobreImg from './assets/sobre.jpg';
+import performanceImg from './assets/performance.jpg';
+
 export interface Service {
   id: string;
   title: string;
@@ -78,26 +82,26 @@ export const localPhotosData: LocalPhoto[] = [
   {
     id: 'hero-pic',
     name: 'Nathalia Quirino - Hero',
-    originalPath: '/imagem/hero.jpg',
+    originalPath: heroImg,
     description: 'Nathalia Quirino em um ambiente profissional, transmitindo autoridade e foco.',
     fallbackText: 'Nathalia Quirino - Nutricionista',
-    placeholderUrl: '/imagem/hero.jpg'
+    placeholderUrl: heroImg
   },
   {
     id: 'sobre-pic',
     name: 'Nathalia - Corrida',
-    originalPath: '/imagem/sobre.jpg',
+    originalPath: sobreImg,
     description: 'Nathalia Quirino praticando corrida, demonstrando a vivência prática do esporte.',
     fallbackText: 'Nathalia Correndo',
-    placeholderUrl: '/imagem/sobre.jpg'
+    placeholderUrl: sobreImg
   },
   {
     id: 'performance-pic',
     name: 'Nathalia - Performance',
-    originalPath: '/imagem/performance.jpg',
+    originalPath: performanceImg,
     description: 'Nathalia Quirino em competição, demonstrando os resultados da alta performance.',
     fallbackText: 'Atleta de Performance',
-    placeholderUrl: '/imagem/performance.jpg'
+    placeholderUrl: performanceImg
   }
 ];
 
