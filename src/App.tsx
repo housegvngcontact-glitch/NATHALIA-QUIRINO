@@ -43,7 +43,10 @@ import {
   localSeoData
 } from './data';
 
-import bgVideo from './assets/SaveInta.com_AQOsXjzEUa5ohlB2cACYe6sifmzxbxqoDRTIpvEafjy8SAEUbrzBSPVH4n51j1eIjmOXkzxHlXxhYiJz_g5905Miod5Bid9xq5KszdM.mp4';
+import heroImg from '../Videos e imagens/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg';
+import sobreImg from '../Videos e imagens/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg';
+import performanceImg from '../Videos e imagens/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg';
+import bgVideo from '../Videos e imagens/SaveInta.com_AQOsXjzEUa5ohlB2cACYe6sifmzxbxqoDRTIpvEafjy8SAEUbrzBSPVH4n51j1eIjmOXkzxHlXxhYiJz_g5905Miod5Bid9xq5KszdM.mp4';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -604,7 +607,7 @@ export default function App() {
                   text: "Uma mudança incrível de composição corporal, priorizando a perda de gordura e manutenção da massa magra com comida de verdade.",
                   stars: 5,
                   tag: "Emagrecimento",
-                  image: "/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg"
+                  image: heroImg
                 },
                 {
                   name: "Paciente 2",
@@ -615,7 +618,7 @@ export default function App() {
                   text: "Protocolo nutricional focado em densidade muscular e definição, aliado à performance nos treinos intensos diários.",
                   stars: 5,
                   tag: "Hipertrofia",
-                  image: "/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg"
+                  image: sobreImg
                 },
                 {
                   name: "Paciente 3",
@@ -626,7 +629,7 @@ export default function App() {
                   text: "Além da visível melhora estética, exames clínicos perfeitos e muita energia para o dia a dia. Nutrição com base científica.",
                   stars: 5,
                   tag: "Performance",
-                  image: "/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg"
+                  image: performanceImg
                 },
                 {
                   name: "Paciente 4",
@@ -637,7 +640,7 @@ export default function App() {
                   text: "Reestruturação completa da alimentação para garantir saciedade, performance metabólica e uma definição impressionante.",
                   stars: 5,
                   tag: "Saúde Integrativa",
-                  image: "/imagem/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg"
+                  image: heroImg
                 },
                 {
                   name: "Paciente 5",
@@ -648,7 +651,7 @@ export default function App() {
                   text: "Alcançando o equilíbrio perfeito entre o corpo dos sonhos e exames excelentes. Nutrição que respeita a individualidade.",
                   stars: 5,
                   tag: "Resultados",
-                  image: "/imagem/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg"
+                  image: sobreImg
                 },
                 {
                   name: "Paciente 6",
@@ -659,7 +662,7 @@ export default function App() {
                   text: "Transformação que vai muito além do espelho. Protocolo focado em restabelecer a saúde e otimizar a máquina humana.",
                   stars: 5,
                   tag: "Transformação",
-                  image: "/imagem/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg"
+                  image: performanceImg
                 }
               ].map((item, idx) => (
                 <motion.div 

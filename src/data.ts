@@ -1,6 +1,6 @@
-import heroImg from './assets/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg';
-import sobreImg from './assets/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg';
-import performanceImg from './assets/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg';
+import heroImg from '../Videos e imagens/SaveInta.com_729729184_18604630945014871_6730938017367406288_n.jpg';
+import sobreImg from '../Videos e imagens/SaveInta.com_729544048_18604630963014871_6694892131638525913_n.jpg';
+import performanceImg from '../Videos e imagens/SaveInta.com_511614858_18517142536014871_7634476029805324875_n.jpg';
 
 export interface Service {
   id: string;
